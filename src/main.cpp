@@ -62,7 +62,7 @@ void loop() {
   display.print("Light: "); display.print(averageLux); display.println(" lx");
   display.display();
 
-  if (lux > 1000) {
+  if (lux > 10000) {
     digitalWrite(motorPin, HIGH);
     Serial.println("Motor ON");
   } else {
